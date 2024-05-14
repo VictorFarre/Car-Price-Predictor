@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Price Prediction</title>
+</head>
+<body>
+    <h1>Predict Your Car Price</h1>
+    <form method="POST" action="/predict_price">
+        <label for="year">Year:</label>
+        <input type="number" name="year" id="year" required><br>
+        <label for="manufacturer">Manufacturer:</label>
+        <input type="text" name="manufacturer" id="manufacturer" required><br>
+        <label for="model">Model:</label>
+        <input type="text" name="model" id="model" required><br>
+        <label for="hp">Horsepower (HP):</label>
+        <input type="number" name="hp" id="hp" required><br>
+        <label for="mileage">Mileage:</label>
+        <input type="number" name="mileage" id="mileage" required><br>
+        <label for="transmission">Transmission:</label>
+        <input type="text" name="transmission" id="transmission" required><br>
+        <button type="submit">Predict Price</button>
+    </form>
+</body>
+</html>

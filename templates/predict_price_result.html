@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Price Prediction Results</title>
+</head>
+<body>
+    {% if error_message %}
+    <p>An error occurred during prediction: {{ error_message }}</p>
+    {% else %}
+    {% if predicted_price %}
+    <p>The predicted price for your car is: ${{ predicted_price }}</p>
+    {% else %}
+    <p>No price prediction available.</p>
+    {% endif %}
+    {% endif %}
+    <a href="/predict_price">Predict another car price</a>
+</body>
+</html>
+
